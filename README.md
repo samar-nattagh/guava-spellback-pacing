@@ -1,8 +1,6 @@
 # Guava spell-back pacing
 
-In my tests, `speech_speed="x-slow"` didn’t measurably slow the spell-back, even when set the same way as Guava’s own slow-speech example. That may be worth checking on your side.
-
-This repo has two versions of a voice agent that books meetings: prototype B is meant to spell names back slower than prototype A, to test whether slower pacing helps callers catch spelling mistakes.
+I built two versions of a meeting-booking agent to test whether slower spell-back pacing helps callers catch misspellings, but found that speech_speed="x-slow" didn’t measurably slow the spell-back in my tests.
 
 To run: `guava login`, then `uv sync`, set `GUAVA_AGENT_NUMBER` to your Guava phone number, run `uv run python prototype-a/prototype_a.py` (or `prototype-b/prototype_b.py`), and call that number. Tests run offline with `uv run python -m unittest` from each prototype's folder.
 
