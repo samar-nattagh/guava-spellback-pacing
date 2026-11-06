@@ -12,7 +12,7 @@ The agent spelled my name back letter by letter, but I had to correct it like th
 
 The agent recorded `D E M U L E M E E S T E R`, missing the E after the first M. It spelled that back and I confirmed "yes," because the spell-back was too fast for me to catch the mistake.
 
-Side note: on another call I asked “You got that?” after spelling my name, and my `on_question` handler returned an unhelpful answer, probably because my confirmation step could only handle “yes” or “no.” I like that the SDK puts Python in charge of the flow: a more generative design might handle that more gracefully, but it would be harder to test.
+Side note: on another call I asked “You got that?” after spelling my name, and my `on_question` handler returned an unhelpful answer, probably because my confirmation step could only handle “yes” or “no.” Still, I like that the SDK puts Python in charge of the flow: a more generative design might handle that more gracefully, but it would be harder to test, so I think finding the gap and adding fallback logic is the better tradeoff.
 
 ## Prototype B
 
