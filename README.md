@@ -23,7 +23,7 @@ Before the name spell-back, the code switches the speech speed to “x-slow” w
 
 Result: I timed the spell-back in each recording: 5.57 seconds for A and 5.76 for B, which is within stopwatch error, so B wasn't measurably slower. I also tried "x-slow" for the whole call, set the same way as Guava's own slow-speech example, and it didn't sound slower either.
 
-On the B call I did catch a misspelling and correct it, but that really can't be credited to pacing since it wasn't significantly slower. The agent then went silent for about 13 and 16 seconds, long enough to make a caller hang up; I don't know whether my code or the platform caused this. It also still saved the misheard name due to a bug in my code (noted as a known issue in the code).
+On the B call I did catch a misspelling and correct it, but that really can't be credited to pacing since it wasn't measurably slower. The agent then went silent for about 13 and 16 seconds, long enough to make a caller hang up; I don't know whether my code or the platform caused this. It also still saved the misheard name due to a bug in my code (noted as a known issue in the code).
 
 ## Testing and next steps
 
